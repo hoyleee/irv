@@ -3,23 +3,26 @@ class MainFooter extends HTMLElement {
         this.innerHTML = `
       
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white   py-5 px-sm-3 px-md-5">
+     
+    <div class="container-fluid  bg-dark text-white   py-5 px-sm-3 px-md-5">
+     <div class="container">
         <div class="row  ">
             <div class="col-lg-7 col-md-6">
                 <div class="row">
                     <div class="col-md-6 mb-5">
                         <h3 class="text-primary mb-4">Informes</h3>
                         <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                        <div class="d-flex justify-content-start mt-4">
+                        <p><i class="fa fa-phone-alt mr-2"></i>+51 957 098 186</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+51 927 640 467</p>
+                        <p><i class="fa fa-envelope mr-2"></i>contacto@ivr.pe</p>
+                       <!-- <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social mr-2" href="#"><i
                                     class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light btn-social mr-2" href="#"><i
                                     class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-md-6 mb-5">
                         <h3 class="text-primary mb-4">Quick Links</h3>
@@ -73,6 +76,7 @@ class MainFooter extends HTMLElement {
                         </form>
                 </div>
             </div>
+        </div>
         </div>
     </div>
    

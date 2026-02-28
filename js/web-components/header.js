@@ -11,9 +11,9 @@ class MainHeader extends HTMLElement {
             <div class="row py-2 px-lg-5">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center text-white">
-                        <small><i class="fa fa-phone-alt mr-2"></i>+51 957 098 186 | +51 927 640 467</small>
-                        <small class="px-3">|</small>
-                        <small><i class="fa fa-envelope mr-2"></i>contacto@ivr.pe</small>
+                        <small><i class="fa fa-phone-alt mr-1 d-none d-sm-inline"></i>+51 957 098 186 | +51 927 640 467</small>
+                        <small class="px-1 px-sm-3">|</small>
+                        <small><i class="fa fa-envelope mr-1 d-none d-sm-inline"></i>contacto@ivr.pe</small>
                     </div>
                 </div>
             </div>
@@ -34,9 +34,19 @@ class MainHeader extends HTMLElement {
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="single.html" class="dropdown-item">Monitoreo ocupacional</a>
-                                <a href="single.html" class="dropdown-item">Monitoreo ambiental</a>
-                                <a href="single.html" class="dropdown-item">Seguridad y saluda en el trabajo</a>
+                               <a href="monitoreo-ocupacional.html" class="dropdown-item">Monitoreo ocupacional</a>
+
+                            <a href="single.html" class="dropdown-item">Monitoreo ambiental</a>
+
+                            <a href="single.html" class="dropdown-item">Seguridad y saluda en el trabajo</a>
+
+                            <a href="single.html" class="dropdown-item">Sistema integrado de gestión</a>
+
+                            <a href="single.html" class="dropdown-item">Capacitaciones y cursos</a>
+
+                            <a href="single.html" class="dropdown-item">Residuos sólidos</a>
+
+                            <a href="single.html" class="dropdown-item">Homologaciones</a>
                             </div>
                         </div>
                         
@@ -55,11 +65,11 @@ class MainHeader extends HTMLElement {
     setActiveLink(currentPage) {
         // Buscar todos los enlaces dentro del shadowRoot o el innerHTML del componente
         const navLinks = this.querySelectorAll('.nav-link, .dropdown-item');
-        
+
         navLinks.forEach(link => {
             // Obtener el href del enlace
             const href = link.getAttribute('href');
-            
+
             // Comparar si el href coincide con la página actual
             if (href === currentPage) {
                 link.classList.add('active');
