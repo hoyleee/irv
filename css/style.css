@@ -9050,6 +9050,10 @@ p,
   font-weight: 100 !important;
 }
 
+.listas li {
+  margin-bottom: 10px;
+}
+
 .btn-social {
   width: 36px;
   height: 36px;

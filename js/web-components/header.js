@@ -36,17 +36,17 @@ class MainHeader extends HTMLElement {
                             <div class="dropdown-menu rounded-0 m-0">
                                <a href="monitoreo-ocupacional.html" class="dropdown-item">Monitoreo ocupacional</a>
 
-                            <a href="single.html" class="dropdown-item">Monitoreo ambiental</a>
+                            <a href="monitoreo-ambiental.html" class="dropdown-item">Monitoreo ambiental</a>
 
-                            <a href="single.html" class="dropdown-item">Seguridad y saluda en el trabajo</a>
+                            <a href="seguridad-y-salud-en-el-trabajo.html" class="dropdown-item">Seguridad y saluda en el trabajo</a>
 
-                            <a href="single.html" class="dropdown-item">Sistema integrado de gestión</a>
+                            <a href="sistema-integrado-de-gestion.html" class="dropdown-item">Sistema integrado de gestión</a>
 
-                            <a href="single.html" class="dropdown-item">Capacitaciones y cursos</a>
+                            <a href="capacitaciones-y-cursos.html" class="dropdown-item">Capacitaciones y cursos</a>
 
-                            <a href="single.html" class="dropdown-item">Residuos sólidos</a>
+                            <a href="residuos-solidos.html" class="dropdown-item">Residuos sólidos</a>
 
-                            <a href="single.html" class="dropdown-item">Homologaciones</a>
+                            <a href="homologaciones.html" class="dropdown-item">Homologaciones</a>
                             </div>
                         </div>
                         
