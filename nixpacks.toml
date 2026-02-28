@@ -1,5 +1,0 @@
-[build]
-  pkgs = ["php82", "nginx"]
-
-[start]
-  cmd = "php-fpm -D && nginx -g 'daemon off;'"
