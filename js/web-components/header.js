@@ -6,12 +6,12 @@ class MainHeader extends HTMLElement {
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i>+51 957 098 186 | +51 927 640 467</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i>contacto@ivr.pe</small>
                 </div>
             </div>
-            <div class="col-lg-6 text-center text-lg-right">
+        <!--    <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
                     <a class="text-white px-2" href="">
                         <i class="fab fa-facebook-f"></i>
@@ -29,7 +29,7 @@ class MainHeader extends HTMLElement {
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
-            </div>
+            </div>  -->
         </div>
     </div>
     <!-- Topbar End -->
@@ -66,7 +66,7 @@ class MainHeader extends HTMLElement {
                     
                     <a href="contact.html" class="nav-item nav-link">Contacto</a>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get A Quote</a>
+                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Contactanos</a>
             </div>
         </nav>
     </div>
