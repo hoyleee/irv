@@ -1,0 +1,8 @@
+[build]
+  [build.variables]
+    PHP_VERSION = "8.2"                # Puedes cambiar a 8.1 o 8.3
+    NIXPACKS_NGINX_CONF = "nginx.conf" # Fuerza el uso de tu archivo
+
+[start]
+  # Iniciamos Nginx y PHP-FPM juntos
+  cmd = "php-fpm -D && nginx -g 'daemon off;'"
