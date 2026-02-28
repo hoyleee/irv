@@ -1,6 +1,6 @@
 class MainHeader extends HTMLElement {
     connectedCallback() {
-        // 1. Obtener la URL actual (ej: "about.html" o "index.html")
+        // 1. Obtener la URL actual (ej: "nosotros.html" o "index.html")
         const path = window.location.pathname.split("/").pop();
 
         // Si estamos en la raíz o index.html, asegurar que apunte a index.html
@@ -29,30 +29,24 @@ class MainHeader extends HTMLElement {
                 <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                     <div class="navbar-nav m-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
                         
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
+                            <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" data-toggle="dropdown">Servicios</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                               <a href="monitoreo-ocupacional.html" class="dropdown-item">Monitoreo ocupacional</a>
-
-                            <a href="monitoreo-ambiental.html" class="dropdown-item">Monitoreo ambiental</a>
-
-                            <a href="seguridad-y-salud-en-el-trabajo.html" class="dropdown-item">Seguridad y saluda en el trabajo</a>
-
-                            <a href="sistema-integrado-de-gestion.html" class="dropdown-item">Sistema integrado de gestión</a>
-
-                            <a href="capacitaciones-y-cursos.html" class="dropdown-item">Capacitaciones y cursos</a>
-
-                            <a href="residuos-solidos.html" class="dropdown-item">Residuos sólidos</a>
-
-                            <a href="homologaciones.html" class="dropdown-item">Homologaciones</a>
+                                <a href="monitoreo-ocupacional.html" class="dropdown-item">Monitoreo ocupacional</a>
+                                <a href="monitoreo-ambiental.html" class="dropdown-item">Monitoreo ambiental</a>
+                                <a href="seguridad-y-salud-en-el-trabajo.html" class="dropdown-item">Seguridad y saluda en el trabajo</a>
+                                <a href="sistema-integrado-de-gestion.html" class="dropdown-item">Sistema integrado de gestión</a>
+                                <a href="capacitaciones-y-cursos.html" class="dropdown-item">Capacitaciones y cursos</a>
+                                <a href="residuos-solidos.html" class="dropdown-item">Residuos sólidos</a>
+                                <a href="homologaciones.html" class="dropdown-item">Homologaciones</a>
                             </div>
                         </div>
                         
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="contacto.html" class="nav-item nav-link">Contacto</a>
                     </div>
-                    <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Contactanos</a>
+                    <a href="contacto.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Contactanos</a>
                 </div>
             </nav>
         </div>
@@ -63,20 +57,38 @@ class MainHeader extends HTMLElement {
     }
 
     setActiveLink(currentPage) {
-        // Buscar todos los enlaces dentro del shadowRoot o el innerHTML del componente
+        // Definir cuáles páginas pertenecen al menú de servicios
+        const servicesPages = [
+            "monitoreo-ocupacional.html",
+            "monitoreo-ambiental.html",
+            "seguridad-y-salud-en-el-trabajo.html",
+            "sistema-integrado-de-gestion.html",
+            "capacitaciones-y-cursos.html",
+            "residuos-solidos.html",
+            "homologaciones.html"
+        ];
+
+        // Buscar todos los enlaces directos
         const navLinks = this.querySelectorAll('.nav-link, .dropdown-item');
 
         navLinks.forEach(link => {
-            // Obtener el href del enlace
             const href = link.getAttribute('href');
 
-            // Comparar si el href coincide con la página actual
+            // Si el href coincide exactamente, marcar como activo
             if (href === currentPage) {
                 link.classList.add('active');
             } else {
                 link.classList.remove('active');
             }
         });
+
+        // Lógica especial para resaltar el dropdown de "Servicios"
+        if (servicesPages.includes(currentPage)) {
+            const dropdownToggle = this.querySelector('#servicesDropdown');
+            if (dropdownToggle) {
+                dropdownToggle.classList.add('active');
+            }
+        }
     }
 }
 customElements.define('main-header', MainHeader);

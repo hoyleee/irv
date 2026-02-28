@@ -7,11 +7,10 @@ class MainFooter extends HTMLElement {
     <div class="container-fluid  bg-dark text-white   py-5 px-sm-3 px-md-5">
      <div class="container">
         <div class="row  ">
-            <div class="col-lg-7 col-md-6">
-                <div class="row">
-                    <div class="col-md-6 mb-5">
+            <div class="col-lg-4 col-md-6">
+               
                         <h3 class="text-primary mb-4">Informes</h3>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                      <!--  <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p> -->
                         <p><i class="fa fa-phone-alt mr-2"></i>+51 957 098 186</p>
                         <p><i class="fa fa-phone-alt mr-2"></i>+51 927 640 467</p>
                         <p><i class="fa fa-envelope mr-2"></i>contacto@ivr.pe</p>
@@ -23,20 +22,9 @@ class MainFooter extends HTMLElement {
                                     class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
                         </div> -->
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h3 class="text-primary mb-4">Quick Links</h3>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
-                            
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
-                        </div>
-                    </div>
-                </div>
+                    
             </div>
-            <div class="col-lg-5 col-md-6  ">
+            <div class="col-lg-8 col-md-6  ">
                 <h3 class="text-primary mb-4">CONTACTO</h3>
                 <p>No dejes el cumplimiento normativo al azar. En IVR Services Generales, te ayudamos a
                         proteger a tus trabajadores, cuidar el medio ambiente y garantizar la continuidad de tu negocio

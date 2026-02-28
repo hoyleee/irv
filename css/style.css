@@ -9105,6 +9105,83 @@ p,
   background-size: cover;
 }
 
+.jumbotron-service-1 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ocu1.jpg);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-service-2 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/monitoreo\ ambiental.jpg);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-service-3 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/serv2.webp);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-service-4 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ser3.jpg);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-service-5 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/serv4.jpg);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-service-6 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/residuos\ solidos.jpg);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-service-7 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/homologacion.jpg);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .btn-play {
   position: relative;
   display: block;
