@@ -1,6 +1,6 @@
 class MainHeader extends HTMLElement {
     connectedCallback() {
-        // 1. Obtener la URL actual (ej: "nosotros" o "index.html")
+        // 1. Obtener la URL actual (ej: "nosotros.html" o "index.html")
         const path = window.location.pathname.split("/").pop();
 
         // Si estamos en la raíz o index.html, asegurar que apunte a index.html
@@ -29,7 +29,7 @@ class MainHeader extends HTMLElement {
                 <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                     <div class="navbar-nav m-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="nosotros" class="nav-item nav-link">Nosotros</a>
+                        <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
                         
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" data-toggle="dropdown">Servicios</a>
