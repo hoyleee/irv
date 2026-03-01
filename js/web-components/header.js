@@ -11,7 +11,7 @@ class MainHeader extends HTMLElement {
             <div class="row py-2 px-lg-5">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center text-white">
-                        <small><i class="fa fa-phone-alt mr-1"></i>+51 957 098 186</small>
+                        <small><i class="fa fa-phone-alt mr-1"></i>+51 957 098 186  | +51 927 640 467</small>
                         <small class="px-3">|</small>
                         <small><i class="fa fa-envelope mr-1"></i>contacto@ivr.pe</small>
                     </div>
