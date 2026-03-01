@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,12 +20,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/web-components/header.js"></script>
-    <script src="js/web-components/footer.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/web-components/header.js"></script>
+    <script type="module"  src="/js/web-components/footer.js"></script>
+    <script src="/js/web-components/contact_form.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid w-100" src="img/about.jpg" alt="">
+                    <img class="img-fluid w-100" src="/img/about.jpg" alt="">
 
                 </div>
                 <div class="col-lg-7">
@@ -65,7 +66,7 @@
                         integrado por ingenieros civiles, geológicos, ambientales, mecánicos, electricistas y
                         arquitectos comprometidos con el éxito de cada proyecto</p>
                     <div class="d-flex align-items-center pt-2">
-                        <a href="nosotros.html" class="btn btn-primary btn-lg  btn-dark  ">Conoce más</a>
+                        <a href="/nosotros" class="btn btn-primary btn-lg  btn-dark  ">Conoce más</a>
                     </div>
                 </div>
             </div>
@@ -106,38 +107,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="bg-primary py-5 px-4 px-sm-5">
-                        <form class="py-5">
-                            <div class="form-group">
-                                <input type="text" class="form-control border-0 p-4" placeholder="Tu nombre"
-                                    required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control border-0 p-4" placeholder="Tu Email"
-                                    required="required" />
-                            </div>
-
-                            <div class="form-group">
-                                <select class="custom-select border-0 px-4" style="height: 47px;">
-                                    <option selected>Servicio</option>
-                                    <option>Monitoreo ocupacional</option>
-                                    <option>Monitoreo ambiental</option>
-                                    <option>Seguridad y saluda en el trabajo</option>
-                                    <option>Sistema integrado de gestión</option>
-                                    <option>Capacitaciones y cursos</option>
-                                    <option>Residuos sólidos</option>
-                                    <option>Homologaciones</option>
-                                    <option>Otros</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Cuentanos más" class="form-control border-0 p-4" name=""
-                                    id=""></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Hablar con un
-                                    Consultor</button>
-                            </div>
-                        </form>
+                      <conctact-form ></conctact-form>
                     </div>
                 </div>
             </div>
@@ -155,7 +125,7 @@
             </div>
             <div class="row align-items-center py-5">
                 <div class="col-lg-5">
-                    <img class="img-fluid " style="max-height: 300px;" src="img/ocu1.jpg" alt="">
+                    <img class="img-fluid " style="max-height: 300px;" src="/img/ocu1.jpg" alt="">
                 </div>
                 <div class="col-lg-7 py-5 py-lg-0">
 
@@ -163,12 +133,12 @@
                     <p class="mb-4">Medición de agentes físicos, químicos, biológicos y calidad de aire/agua bajo
                         estándares legales.</p>
 
-                    <a href="monitoreo-ocupacional.html" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
+                    <a href="/monitoreo-ocupacional" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
                 </div>
             </div>
             <div class="row align-items-center py-5">
                 <div class="col-lg-5">
-                    <img class="img-fluid " style="max-height: 300px;" src="img/monitoreo ambiental.jpg" alt="">
+                    <img class="img-fluid " style="max-height: 300px;" src="/img/monitoreo ambiental.jpg" alt="">
                 </div>
                 <div class="col-lg-7 py-5 py-lg-0">
 
@@ -176,12 +146,12 @@
                     <p class="mb-4">El monitoreo ambiental se realiza a efectos de medir la presencia y concentración de
                         contaminantes en el ambiente, así como el estado de conservación de los recursos naturales.</p>
 
-                    <a href="monitoreo-ambiental.html" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
+                    <a href="/monitoreo-ambiental" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
                 </div>
             </div>
             <div class="row align-items-center py-5">
                 <div class="col-lg-5">
-                    <img class="img-fluid " style="max-height: 300px;" src="img/serv2.webp" alt="">
+                    <img class="img-fluid " style="max-height: 300px;" src="/img/serv2.webp" alt="">
                 </div>
                 <div class="col-lg-7 py-5 py-lg-0">
 
@@ -190,12 +160,12 @@
                         evaluar y controlar peligros y riesgos laborales promoviendo un ambiente de trabajo seguro y
                         saludable en las empresas.</p>
 
-                    <a href="seguridad-y-salud-en-el-trabajo.html" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
+                    <a href="/seguridad-y-salud-en-el-trabajo" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
                 </div>
             </div>
             <div class="row align-items-center py-5">
                 <div class="col-lg-5">
-                    <img class="img-fluid " style="max-height: 300px;" src="img/ser3.jpg" alt="">
+                    <img class="img-fluid " style="max-height: 300px;" src="/img/ser3.jpg" alt="">
                 </div>
                 <div class="col-lg-7 py-5 py-lg-0">
 
@@ -204,13 +174,13 @@
                         sectores más exigentes del país.
                     </p>
 
-                    <a href="sistema-integrado-de-gestion.html" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
+                    <a href="/sistema-integrado-de-gestion" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
                 </div>
             </div>
 
             <div class="row align-items-center py-5  ">
                 <div class="col-lg-5">
-                    <img class="img-fluid " style="max-height: 300px;" src="img/serv4.jpg" alt="">
+                    <img class="img-fluid " style="max-height: 300px;" src="/img/serv4.jpg" alt="">
                 </div>
                 <div class="col-lg-7 py-5 py-lg-0">
 
@@ -218,12 +188,12 @@
                     <p class="mb-4">Cursos de trabajos de alto riesgo, habilidades blandas y respuesta ante emergencias.
                     </p>
 
-                    <a href="capacitaciones-y-cursos.html" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
+                    <a href="/capacitaciones-y-cursos" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
                 </div>
             </div>
             <div class="row align-items-center py-5  ">
                 <div class="col-lg-5">
-                    <img class="img-fluid " style="max-height: 300px;" src="img/residuos solidos.jpg" alt="">
+                    <img class="img-fluid " style="max-height: 300px;" src="/img/residuos solidos.jpg" alt="">
                 </div>
                 <div class="col-lg-7 py-5 py-lg-0">
 
@@ -231,12 +201,12 @@
                     <p class="mb-4">Capacitaciones especializadas para potenciar habilidades, actualizar conocimientos y
                         elevar el desempeño del personal.</p>
 
-                    <a href="residuos-solidos.html" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
+                    <a href="/residuos-solidos" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
                 </div>
             </div>
             <div class="row align-items-center py-5  ">
                 <div class="col-lg-5">
-                    <img class="img-fluid " style="max-height: 300px;" src="img/homologacion.jpg" alt="">
+                    <img class="img-fluid " style="max-height: 300px;" src="/img/homologacion.jpg" alt="">
                 </div>
                 <div class="col-lg-7 py-5 py-lg-0">
 
@@ -245,7 +215,7 @@
                         brinda la posibilidad de conocer y evaluar integralmente a sus proveedores, de manera objetiva e
                         imparcial.</p>
 
-                    <a href="homologaciones.html" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
+                    <a href="/homologaciones" class="btn btn-primary mt-3 py-2 px-4">Conoce más</a>
                 </div>
             </div>
 
@@ -306,17 +276,17 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

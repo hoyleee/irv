@@ -1,8 +1,10 @@
+import './contact_form.js'
 class MainFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
       
     <!-- Footer Start -->
+    
      
     <div class="container-fluid  bg-dark text-white   py-5 px-sm-3 px-md-5">
      <div class="container">
@@ -30,38 +32,7 @@ class MainFooter extends HTMLElement {
                         proteger a tus trabajadores, cuidar el medio ambiente y garantizar la continuidad de tu negocio
                         con nuestro staff multidisciplinario de expertos.</p>
                 <div class="w-100">
-                   <form class=" ">
-                            <div class="form-group">
-                                <input type="text" class="form-control border-0 p-4" placeholder="Tu nombre"
-                                    required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control border-0 p-4" placeholder="Tu Email"
-                                    required="required" />
-                            </div>
-
-                            <div class="form-group">
-                                <select class="custom-select border-0 px-4" style="height: 47px;">
-                                    <option selected>Servicio</option>
-                                    <option>Monitoreo ocupacional</option>
-                                    <option>Monitoreo ambiental</option>
-                                    <option>Seguridad y saluda en el trabajo</option>
-                                    <option>Sistema integrado de gestión</option>
-                                    <option>Capacitaciones y cursos</option>
-                                    <option>Residuos sólidos</option>
-                                    <option>Homologaciones</option>
-                                    <option>Otros</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Cuentanos más" class="form-control border-0 p-4" name=""
-                                    id=""></textarea>
-                            </div>
-                            <div>
-                                <button class="btn  btn-primary btn-block border-0 py-3" type="submit">Hablar con un
-                                    Consultor</button>
-                            </div>
-                        </form>
+                    <conctact-form></conctact-form>   
                 </div>
             </div>
         </div>
