@@ -3,7 +3,7 @@ function enviarWhatsApp() {
     const email = document.getElementById('contact_email_input').value;
     const servicio = document.getElementById('contact_service_input').value;
     const mensaje = document.getElementById('contact_detail_input').value;
-    const telefono = "+51991749806"; // Tu número con código de país
+    const telefono = "+51957098186"; // Tu número con código de país
 
     const mensajeTexto = `Hola, mi nombre es ${nombre}, estoy buscando informacíón por el servicio de *${servicio}*.
 ${mensaje ? mensaje + '.' : ''}
