@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ["php82", "php82Extensions.curl", "nginx"]
-
-[start]
-cmd = "php-fpm82 && nginx -g 'daemon off;'"
